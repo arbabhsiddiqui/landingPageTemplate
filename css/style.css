@@ -65,6 +65,10 @@ body {
   padding-top: 40px;
 }
 
+.form .invalid-feedback {
+  text-align: left;
+}
+
 .form h3 {
   font-size: 32px;
   color: #000;
