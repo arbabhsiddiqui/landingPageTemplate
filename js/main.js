@@ -1,14 +1,16 @@
-const btn=document.getElementById('btn');
+
+
+
+// ------------------------------declare variables----------------------------------------------------------------------------------------
+
+const submitBtn=document.getElementById('btn');
 const addform=document.getElementById('form');
-
-const heading=document.getElementById('heading');
-const phone=document.querySelector('.phone');
-const email=document.querySelector('.email');
-const city=document.querySelector('.city');
 const select=document.getElementById('select');
-const disclaimer=document.getElementById('disclaimer');
-const footer=document.getElementById('footer');
-
+const inputfi=document.querySelectorAll('.form-control');
+const form=document.querySelector('.form');
+const fullName=document.getElementById('name');
+const footer=document.querySelector('.footer');
+//--------------------------------------check form validity---------------------------------------------------------------------------------
 addform.addEventListener('submit',(e)=>{
     e.preventDefault();
     const formData= new FormData(addform);
@@ -24,20 +26,18 @@ addform.addEventListener('submit',(e)=>{
 }
 );
 
+//-----------------------------------------------submit button styling---------------------------------------------------------------------------
+submitBtn.addEventListener('click' ,(e)=>{
+    inputfi.forEach(i =>{
+        
+        i.style.marginTop="-10px";
+    });
+    select.style.marginTop="-10px";
+   fullName.style.marginTop="0px";
+   
+  
 
-btn.addEventListener('click' ,(e)=>{
-
-
-
-
-phone.style.marginTop="-15px";
-email.style.marginTop="-15px";
-city.style.marginTop="-15px";
-select.style.marginTop="-15px"
-footer.style.paddingBottom="0px";
-
-
-})
+});
 
 
 

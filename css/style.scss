@@ -12,6 +12,9 @@
 	margin: 0;
 	padding: 0;
 }
+
+//---------------------------------------------body style ----------------------------------------------------
+
 body {
 	font-family:$font;
 	display: -webkit-box;
@@ -33,11 +36,12 @@ body {
 	text-align: center;
 	background-color: $bg-color;
 background-image:$bg-image;
-	//background-image: url(../image/bg.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+
 .container {
 	display: -ms-grid;
 	display: grid;
@@ -49,16 +53,17 @@ background-image:$bg-image;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	//-webkit-box-shadow: 5px 0px 1 0px 0px rgba(50, 50, 50, 0.3);
-	//box-shadow: 5px 0px 1 0px 0px rgba(50, 50, 50, 0.3);
+	
 	margin: 3rem;
-	//border-radius: 0 20px 20px 0;
+
 	width: 1000px;
 	height: 500px;
 	.image2 {
 		display: none;
 	}
 }
+
+//-------------------------------------------------------------form styling ------------------------------------------------------------------
 .form {
 	background-color: $base-color;
 	height: 85vh;
@@ -78,13 +83,11 @@ background-image:$bg-image;
 		color: $text-color;
 		font-weight: $heading-weight;
 	}
-
+//------------------------------------------form footer styling---------------------------------------
 .footer{
-	position: absolute;
+    position: absolute;
 	bottom:0;
-	padding-bottom: 20px;
-}
-#form{
+	padding-bottom: 30px;
 
 }
 	
@@ -98,6 +101,8 @@ background-image:$bg-image;
 			font-size: 12px;
 		}
 	}
+
+	//------------------------social icon styling---------
 	.social-icon{
 	i{
 		color:$text-color;
@@ -122,7 +127,7 @@ background-image:$bg-image;
 
 
 
-	
+	//---------------------------------form input styling----------------------
 	.form-control {
 		width: $full-width;
 	//	margin-top: 1.2rem;
@@ -157,8 +162,9 @@ background-image:$bg-image;
 			border-bottom: 3px solid $accent-color;
 		}
 	}
+
+	//-------------------------------------------------button styling--------------------------
 	.btn {
-		//background: -webkit-gradient(linear, left top, right top, from(#EB5903), to();
 		background: linear-gradient(to right,$btn-color);
 		border: none;
 		padding: 0.5rem 2rem;
@@ -174,6 +180,8 @@ background-image:$bg-image;
 	}
 }
 
+
+//-------------------------------------------------------image styling ---------------------------------------------------------------------
 .image {
 	height: 85vh;
 
@@ -188,37 +196,15 @@ background-image:$bg-image;
 	
 	}
 }
-/*@media(max-width:500px){
-	.container{
-		display: grid;
-		grid-template-columns: 1fr;
-		width:400px;
-	}
-	.image{
-		display: none;
-	}
-	
-		.image2 {
-			width:100%;
-			display: block;
-			margin-top: 500px;
-			border-radius: 20px;
-		}
-}
-*/
 
 
-
-
+//----------------------------------------------------Mobile responsive-------------------------------------------------------------------
 @media (max-width: 500px) {
 	body {
-		//width: 500px !important;
-		//height: 150vh;
-	//	display: block;
-
 	height:$full-width;
 	width:$full-width;
 	overflow:auto;
+	
 		
 	}
 	h3{
@@ -232,17 +218,14 @@ background-image:$bg-image;
 		display: grid;
 		-ms-grid-columns: 1fr;
 		grid-template-columns: 1fr;
-	//	width: 400px !important;
 		height:$body-height;
 		padding:1rem;
-	//	margin:50px !important;
 	
 		.image {
 			height:$full-width;
 			display: block;
 			padding:2rem;
 			margin: 0 47px -50px 400px;
-			//margin-top: 500px;
 			img{
 				border-radius: 0;
 			border-top-left-radius: $border-radius;
@@ -257,6 +240,10 @@ background-image:$bg-image;
 		border-radius: 0px 0 $border-radius $border-radius;
 		padding:2rem;
 		margin: -10px 80px 0 430px;
+		.footer{
+			padding-bottom: 20px;
+		}
+		
         i{
 			font-size: 15px;
 		}
@@ -265,19 +252,18 @@ background-image:$bg-image;
 				font-size: 10px;
 			}
 		}
-		//background: #000;
-		//width:300px;
-	//width:100%;
-		//border-radius: 20px;
-		//margin: 0 50px;
+		
 	}
+
+	
 	#form{
-		margin-top: -20px;
+		
+		height:60vh;
 	}
 }
 
 
-
+//--------------------------------------------desktop styling-----------------------------------------------------------------------------------
 @media (min-width: 1400px) {
 
 	.container {

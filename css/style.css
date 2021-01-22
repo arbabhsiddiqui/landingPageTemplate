@@ -78,7 +78,7 @@ body {
 .form .footer {
   position: absolute;
   bottom: 0;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .form .disclaimer h4 {
@@ -173,24 +173,6 @@ body {
   border-top-right-radius: 20px;
 }
 
-/*@media(max-width:500px){
-	.container{
-		display: grid;
-		grid-template-columns: 1fr;
-		width:400px;
-	}
-	.image{
-		display: none;
-	}
-	
-		.image2 {
-			width:100%;
-			display: block;
-			margin-top: 500px;
-			border-radius: 20px;
-		}
-}
-*/
 @media (max-width: 500px) {
   body {
     height: 100%;
@@ -235,6 +217,9 @@ body {
     padding: 2rem;
     margin: -10px 80px 0 430px;
   }
+  .form .footer {
+    padding-bottom: 20px;
+  }
   .form i {
     font-size: 15px;
   }
@@ -242,7 +227,7 @@ body {
     font-size: 10px;
   }
   #form {
-    margin-top: -20px;
+    height: 60vh;
   }
 }
 
