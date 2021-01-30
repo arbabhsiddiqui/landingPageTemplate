@@ -1,0 +1,218 @@
+@import "libs/var.scss";
+
+/* ------------------------------- global css ------------------------------- */
+
+body {
+  font-family: $bodyFont;
+  background-color: $bg;
+}
+
+.bg-gradient {
+  background: linear-gradient($gcolor1, $gcolor2),
+    url(http://placeimg.com/400/200/nature);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-accent {
+  background-color: $accent !important;
+}
+
+.btn-primary {
+  background: $color1;
+  border-color: $color1;
+  transition: all 0.3s;
+  &:hover {
+    background-color: $light;
+    border-color: $light;
+    transform: translateY(-1px);
+    color: $color1;
+  }
+}
+
+.btn-empty {
+  background: transparent !important;
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  &:hover {
+    cursor: pointer;
+    .fas {
+      color: $color1 !important;
+    }
+  }
+}
+
+.bottom-border {
+  border-bottom: 1px groove $light;
+}
+.top-border {
+  border-top: 1px groove $light;
+}
+
+.h-100 {
+  height: 100vh !important;
+}
+.h-70 {
+  height: 70vh !important;
+}
+.h-90 {
+  height: 90vh !important;
+}
+
+.dropdown-menu {
+  background-color: $accent !important;
+  border-radius: 7px;
+  box-shadow: 2px 5px 10px rgba(17, 17, 17, 0.178);
+  transition: all 0.3s;
+}
+
+/* ------------------------------- global  css end ------------------------------- */
+
+/* --------------------------------- navbar --------------------------------- */
+
+.sidebar {
+  height: 100vh;
+  background: linear-gradient(rgba(181, 69, 255, 0.5), rgba(61, 112, 253, 0.5)),
+    url(http://placeimg.com/400/200/nature);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 5px 2px 4px $secondary;
+
+  @include mobile() {
+    position: static;
+    height: auto;
+  }
+
+  .sidebar-link {
+    &:hover {
+      background: #444;
+      border-radius: 5px;
+      transition: all 0.4s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    }
+  }
+
+  .current {
+    background-color: $accent;
+    border-radius: 7px;
+    box-shadow: 2px 5px 10px rgba(17, 17, 17, 0.178);
+    transition: all 0.3s;
+
+    &:hover {
+      transform: translate(-1px);
+    }
+  }
+}
+
+.top-nav {
+  @include mobile() {
+    position: static;
+  }
+
+  .search-input {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: solid 1px #444;
+    transition: all 0.3s;
+
+    &:focus {
+      background: transparent;
+      box-shadow: none;
+      border-bottom: solid 1px $accent;
+    }
+  }
+  .search-btn {
+    border-radius: 50%;
+    padding: 10px 15px;
+    color: $accent;
+    transition: all 0.4s;
+    &:hover {
+      transform: translateY(-1px);
+    }
+  }
+
+  .icon-parent {
+    position: relative;
+  }
+  .icon-bullet-active {
+    content: "3";
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    height: 12px;
+    width: 12px;
+    background: $accent;
+    border-radius: 50%;
+  }
+}
+
+/* ------------------------------- navbar end ------------------------------- */
+
+/* -------------------------------- top-card-section ------------------------------- */
+
+.card-common {
+  box-shadow: 1px 2px 5px #999;
+  transition: all 0.4s;
+  &:hover {
+    box-shadow: 2px 3px 15px #999;
+    transform: rotateY(-1px);
+  }
+}
+
+/* ------------------------------ top-card-section end ----------------------------- */
+
+/* ------------------------------ progress bar ------------------------------ */
+
+// task list
+.task-border {
+  border-left: 3px solid $accent;
+}
+// end of task list
+
+/* ------------------------------ progress bar end ------------------------------ */
+
+/* --------------------------------- footer --------------------------------- */
+
+.footer-link {
+  color: $secondary;
+  &:hover {
+    background: #444;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff !important;
+
+    text-decoration: none;
+    transition: all 0.1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  }
+}
+
+/* --------------------------------- footer end --------------------------------- */
+
+/* ------------------------------- login-page ------------------------------- */
+
+#login-page {
+  height: 100vh;
+}
+
+/* ------------------------------- login-page end ------------------------------- */
+
+.box {
+  box-shadow: 2px 3px 10px rgba(68, 68, 68, 0.3);
+}
+
+/* ------------------------------- about-page ------------------------------- */
+
+#detail-section,
+#progress-section {
+  min-height: 70vh;
+}
+
+/* ------------------------------- about-page end ------------------------------- */
+
+footer {
+  margin-top: 10%;
+}

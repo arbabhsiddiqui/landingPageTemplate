@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap");
+
+// Font.
+$bodyFont: "Poppins", sans-serif;
+
+$weight: 100;
+$weight-bold: 700;
+
+// Palette.
+
+$bg: #eee;
+$secondary: #999;
+$light: #fff;
+$accent: #f44336;
+$color1: #7c3693;
+$color2: #161718;
+$gcolor1: #7c369398;
+$gcolor2: #000000b0;
+
+// media query
+
+$mobile: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
