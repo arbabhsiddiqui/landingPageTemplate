@@ -185,7 +185,7 @@ body {
 /*-----------------------------------------mobile responsive styling-----------------------------------------------------------------*/
 @media (max-width: 500px) {
   body {
-    height: 150vh;
+    height: 100vh;
     width: var(--full-width);
     overflow: auto;
     background:var(--bg-image);
@@ -233,9 +233,19 @@ body {
   }
   .form i {
     font-size: 15px;
+    
+  }
+
+  .social-icon{
+    margin-left: 70px;
+  }
+  .form .disclaimer h4{
+    margin-left: 80px;
   }
   .form .disclaimer p {
     font-size: 10px;
+    margin-left: 50px !important;
+    
 
   }
   #form {
