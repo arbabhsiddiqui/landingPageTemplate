@@ -6,6 +6,9 @@
 const submitBtn=document.getElementById('btn');
 const addform=document.getElementById('form');
 const select=document.getElementById('select');
+const city=document.getElementById('city');
+const phone=document.getElementById('phone');
+const email=document.getElementById('email');
 const inputfi=document.querySelectorAll('.form-control');
 const form=document.querySelector('.form');
 const fullName=document.getElementById('name');
@@ -27,17 +30,22 @@ addform.addEventListener('submit',(e)=>{
 );
 
 //-----------------------------------------------submit button styling---------------------------------------------------------------------------
-submitBtn.addEventListener('click' ,(e)=>{
-    inputfi.forEach(i =>{
-        
-        i.style.marginTop="-10px";
-    });
-    select.style.marginTop="-10px";
-   fullName.style.marginTop="0px";
+submitBtn.addEventListener('click' ,change);
+    
+   function change(e)
+   {
+       
+    select.style.marginTop="-15px";
+    city.style.marginTop="-15px";
+    phone.style.marginTop="-15px";
+    email.style.marginTop="-15px";
+    addform.style.paddingTop="0px";
+    addform.style.marginTop="-25px";
+ 
    
   
 
-});
+}
 
 
 
