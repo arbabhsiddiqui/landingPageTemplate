@@ -1,0 +1,23 @@
+/*---------------------------------------------------declare variales------------------------------------------------------------------*/
+:root{
+--body-height:100vh;
+--heading-size:32px;
+--heading-weight:700;
+--full-width:100%;
+--icon-size:20px;
+--paragraph-size:16px;
+--paragraph-weight:600;
+--border-radius:20px;
+
+
+
+--base-color:#fff;
+--text-color:#000;
+--border-color:#333;
+--btn-color:#9552c1;
+--accent-color:#2C3693;
+--bg-color:#bbaa99;
+--font: 'Roboto', sans-serif;
+--bg-image:url("../image/background.jpg");
+
+}
