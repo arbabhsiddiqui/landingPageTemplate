@@ -51,9 +51,7 @@ body {
   height: 500px;
 }
 
-.container .image2 {
-  display: none;
-}
+
 
 .form {
   background-color:var(--base-color);
