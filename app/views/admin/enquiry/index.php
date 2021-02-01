@@ -21,6 +21,11 @@
                             <div class="col-sm-6">
                                 <h4 class="text-muted my-5">Show Enquiries</h4>
                             </div>
+                            <div class="col-sm-6 text-right">
+                    <form action="<?php echo URLROOT ?>/manageenquiry/downloadenquiry" method="post">
+                      <button type="submit" class="btn btn-success">download</button>
+                    </form>
+                  </div>
 
                         </div>
                         <div class="text-danger" id="message"></div>

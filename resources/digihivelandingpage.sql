@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 27, 2021 at 01:09 PM
+-- Generation Time: Feb 01, 2021 at 08:07 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.2.33
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `landingpage`
+-- Database: `digihivelandingpage`
 --
 
 -- --------------------------------------------------------
@@ -41,7 +41,8 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `name`, `email`, `password`, `role`, `created_at`) VALUES
-(6, 'digihive', 'developer@digihive.co.uk', '$2y$10$3OAYTVAM.rp63MAfGRQU2OywrdaoMXIMFYYIjG8jRx5imO77w/vYu', '1', '2020-09-23 12:39:34');
+(6, 'digihive', 'developer@digihive.co.uk', '$2y$10$3OAYTVAM.rp63MAfGRQU2OywrdaoMXIMFYYIjG8jRx5imO77w/vYu', '1', '2020-09-23 12:39:34'),
+(8, 'Basit Ansari', 'basitprince8001@gmail.com', '$2y$10$qk.oWqfjXXGe2zz/nEKg0.hVL5KbckxSZKsLwPxu7vRgZUyOLpMc.', '0', '2021-01-28 17:50:33');
 
 -- --------------------------------------------------------
 
@@ -81,8 +82,14 @@ CREATE TABLE `dropdown2` (
 --
 
 INSERT INTO `dropdown2` (`id`, `value`) VALUES
-(17, 'sddf'),
-(18, 'sddf');
+(21, 'UX/UI Design and Development'),
+(22, 'SEO'),
+(23, 'Pay Per Click'),
+(24, 'Social Media Marketing'),
+(25, 'Design & Branding'),
+(26, 'Content & Strategy'),
+(27, 'Digital Events'),
+(28, 'Digital Productions');
 
 -- --------------------------------------------------------
 
@@ -154,7 +161,7 @@ CREATE TABLE `home_page` (
 --
 
 INSERT INTO `home_page` (`id`, `field1`, `field2`, `field3`, `field4`, `field5`, `field6`, `dropdown1`, `dropdown2`, `dropdown3`, `bg_image`, `main_image`, `disclaimer_heading`, `disclaimer_msg`, `title`, `sub_title`, `date_of_updation`, `facebook_link`, `twitter_link`, `instagram_link`, `linkedin_link`, `youtube_link`, `whatsapp`, `seo_title`, `seo_keyword`, `seo_desc`, `og_title`, `og_desc`, `og_image`, `google_tag_manager`, `facebook_pixel`, `main_email`, `base_color`, `text_color`, `border_color`, `btn_color`, `accent_color`, `bg_color`) VALUES
-(1, 'workplace', '', '', '', '', '', 'city', '', '', '', 'Untitled-4.jpg', 'Disclaimer', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, beatae. Modi repudiandae accusamus ducimus culpa.', 'AyuSynk Festive Offer!', 'Fill The Below Form To Avail The limited Time Offer!', '2021-01-21 07:15:01', 'facebook link', 'Twitter Link', 'Instagram Link', 'LinkedIn Link', 'YouTube Link', '9305514423', 'seo title', 'seo keyword', 'seo description', 'og title', 'og description', '92449-full_pin-on-wallpapers.jpg', 'google tag manager', 'facebook pixel', 'dev13dh@gmail.com', 'dd', '#2C3693', 'fkkff', 'success', 'kjjjv', 'vv');
+(1, 'Current City', '', '', '', '', '', '', 'Services', '', 'background.jpg', 'LANDING PAGE WEBSITE (3).jpg', 'Disclaimer', 'By submitting the above form, you are agreeing to our terms and conditions', 'Is your business online yet?', 'If not please provide your details below and we will make sure to bring you online.', '2021-01-21 07:15:01', 'facebook link', 'Twitter Link', 'Instagram Link', 'LinkedIn Link', 'YouTube Link', '9305514423', 'seo title', 'seo keyword', 'seo description', 'og title', 'og description', 'bg.jpg', 'google tag manager', 'facebook pixel', 'dev13dh@gmail.com', 'red', '#2C3693', 'fkkff', 'success', 'kjjjv', 'vv');
 
 -- --------------------------------------------------------
 
@@ -184,11 +191,8 @@ CREATE TABLE `page_enquiry` (
 --
 
 INSERT INTO `page_enquiry` (`id`, `name`, `phone_number`, `email`, `field1`, `field2`, `field3`, `field4`, `field5`, `field6`, `dropdown1_value`, `dropdown2_value`, `dropdown3_value`, `status`) VALUES
-(1, 'Abdullah', '7398716634', 'basitprince8001@gmail.com', 'Lucknow', '', '', '', '', '', 'kanpur', '', '', 1),
-(2, 'Faheem', '7398716600', 'basit@gmail.com', '', '', '', '', '', '', 'lucknow', '', '', 1),
-(3, 'Abdul Basit', '7398716675', 'basitprince8001@gmail.com', 'Lucknow', '', '', '', '', '', 'mumbai', '', '', 1),
-(4, 'Abdullah', '7398716634', 'basitprince8001@gmail.com', '', '', '', '', '', '', 'lucknow', '', '', 1),
-(5, 'Basit', '7398716634', 'basit@gmail.com', '', '', '', '', '', '', 'lucknow', '', '', 1);
+(1, 'Mohd Faheem', '9305514423', 'faheem@gmail.com', 'Lucknow', '', '', '', '', '', '', 'Design & Branding', '', 1),
+(2, 'Abdullah', '7398716634', 'basitprince8001@gmail.com', 'Lucknow', '', '', '', '', '', '', 'Design & Branding', '', 1);
 
 --
 -- Indexes for dumped tables
@@ -238,25 +242,25 @@ ALTER TABLE `page_enquiry`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `dropdown1`
 --
 ALTER TABLE `dropdown1`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
 -- AUTO_INCREMENT for table `dropdown2`
 --
 ALTER TABLE `dropdown2`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `dropdown3`
 --
 ALTER TABLE `dropdown3`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `home_page`
@@ -268,7 +272,7 @@ ALTER TABLE `home_page`
 -- AUTO_INCREMENT for table `page_enquiry`
 --
 ALTER TABLE `page_enquiry`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

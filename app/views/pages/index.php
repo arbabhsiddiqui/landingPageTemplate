@@ -115,9 +115,8 @@
       <?php } ?>
 
       <div class="form-group mt">
-        <button type="submit" class="btn" id="btn">
-          Submit
-        </button>
+      <input type="submit" value="Submit" class="btn btn-primary" id="btn">
+       
       </div>
 
     </form>
@@ -178,6 +177,7 @@
 
     } else {
       e.preventDefault();
+      document.getElementById("btn").value = "Request Sending";
       const formData = new FormData(addForm);
       const data = await fetch("<?= URLROOT ?>/pages/add", {
         method: "POST",
@@ -192,7 +192,7 @@
       } else {
         message.innerHTML = '';
         addForm.parentNode.removeChild(addForm);
-        thanku.innerHTML = "<div class='text-success center'style='margin-top:150px;'>“Thank you for sharing your details.<br>We will contact you soon!<br>Visit our website to explore more digital avenues.”<br><br><a href='https://www.digihive.co.uk/'class='btn btn-primary'>visit website</a>";
+        thanku.innerHTML = "<div class='text-success center'style='margin-top:150px;'>Thank you for sharing your details.<br>We will contact you soon!<br>Visit our website to explore more digital avenues.<br><br><a href='https://www.digihive.co.uk/'class='btn btn-primary'>Visit Website</a>";
       }
 
     }
