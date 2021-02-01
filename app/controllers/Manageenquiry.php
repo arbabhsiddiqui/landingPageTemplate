@@ -32,6 +32,26 @@ class Manageenquiry extends Controller
       redirect("manageenquiry");
     }
   }
+  public function downloadenquiry()
+  {
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+      $enquiry = $this->enquiryModel->getData();
+      $homepage = $this->homepageModel->getDataById(1);
+      $data = [
+        'homepage' => $homepage,
+        'enquiry' => $enquiry,
+      ];
+
+      if ($data) {
+
+        $this->view("admin/enquiry/excel", $data);
+      } else {
+        redirect('manageenquiry');
+      }
+    } else {
+      redirect('manageenquiry');
+    }
+  }
 
 
 
